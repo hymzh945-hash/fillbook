@@ -60,3 +60,11 @@ fillbook serve                           # UI on :8766
   transfers are not in a fills export.
 
 MIT licensed. No network calls, no credentials. Not financial advice.
+
+## Pro edition
+
+A paid edition (FillBook Pro) is being prepared. Pro adds the HTML report templates, CSV
+exports and an offline-verified signed licence.
+
+https://hymz.gumroad.com
+
