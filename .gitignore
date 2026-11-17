@@ -6,3 +6,4 @@ dist/pack/
 *.pem
 .pytest_cache/
 fillbook-demo/
+dist/*.tar.gz
