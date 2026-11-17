@@ -1,0 +1,11 @@
+FillBook
+Copyright (c) 2026 FillBook
+
+FillBook reads exchange exports locally. It does not call any exchange API,
+does not hold credentials, and sends nothing over the network.
+
+Third-party dependencies (not vendored):
+- pandas, NumPy — BSD-3-Clause
+- Matplotlib — Matplotlib License (BSD-compatible)
+
+All matching, analytics, reporting and licensing code is original work, MIT licensed.

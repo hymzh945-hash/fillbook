@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fillbook"
+version = "0.1.0"
+description = "Turn exchange fills into an audited PnL book: FIFO round trips, fee drag, session edge, findings"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "FillBook" }]
+keywords = ["trade journal", "pnl", "fifo", "okx", "binance", "trading analytics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = ["pandas>=2.0", "numpy>=1.24", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+license = ["cryptography>=41"]
+
+[project.scripts]
+fillbook = "fillbook.cli:main"
+fb = "fillbook.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fillbook*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
